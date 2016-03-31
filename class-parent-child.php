@@ -37,10 +37,12 @@ if ( class_exists( 'GFForms' ) ) {
 		protected $_capabilities = array(
 			'gravityflowparentchild_uninstall',
 			'gravityflowparentchild_settings',
+			'gravityflowparentchild_form_settings',
 			'gravityflowparentchild_view_all',
 		);
 
 		protected $_capabilities_app_settings = 'gravityflowparentchild_settings';
+		protected $_capabilities_form_settings = 'gravityflowparentchild_form_settings';
 		protected $_capabilities_uninstall = 'gravityflowparentchild_uninstall';
 
 		public static function get_instance() {

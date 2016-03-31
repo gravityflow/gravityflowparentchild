@@ -44,6 +44,9 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
 
 == ChangeLog ==
 
+= 1.0.0.3 =
+- Added the gravityflowparentchild_form_settings capability
+
 = 1.0.0.2 =
 - Added the gravityflowparentchild_add_child_entry_link filter.
     Example:

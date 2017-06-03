@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[gravityflow.gravityflowparentchild]
+[gravityflowparentchild.gravityflowparentchild]
 file_filter = languages/gravityflowparentchild-<lang>.po
 source_file = languages/gravityflowparentchild.pot
 source_lang = en_US

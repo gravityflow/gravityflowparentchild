@@ -3,7 +3,7 @@
 Plugin Name: Gravity Flow Parent-Child Forms Extension
 Plugin URI: http://gravityflow.io
 Description: Gravity Flow Parent-Child Forms Extension for Gravity Flow.
-Version: 1.0.0.3
+Version: 1.1-dev
 Author: Steve Henty
 Author URI: http://www.stevenhenty.com
 License: GPL-3.0+
@@ -25,7 +25,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-define( 'GRAVITY_FLOW_PARENT_CHILD_VERSION', '1.0.0.3' );
+define( 'GRAVITY_FLOW_PARENT_CHILD_VERSION', '1.1-dev' );
 define( 'GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_NAME', 'Parent-Child Forms' );
 
 add_action( 'gravityflow_loaded', array( 'Gravity_Flow_Parent_Child_Bootstrap', 'load' ), 1 );

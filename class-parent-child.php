@@ -74,7 +74,7 @@ if ( class_exists( 'GFForms' ) ) {
 
 			foreach ( $parent_form_ids as $parent_form_id ) {
 				$entry_meta[ 'workflow_parent_form_id_' . $parent_form_id . '_entry_id' ] = array(
-					'label'                      => __( 'Parent Entry ID', 'gravityflowformconnector' ),
+					'label'                      => sprintf( __( 'Parent Entry ID: Form %d', 'gravityflowformconnector' ), $parent_form_id ),
 					'is_numeric'                 => true,
 					'update_entry_meta_callback' => array( $this, 'update_entry_meta_callback' ),
 					'is_default_column'          => true, // this column will be displayed by default on the entry list
@@ -180,7 +180,7 @@ if ( class_exists( 'GFForms' ) ) {
 				return;
 			}
 
-			$current_entry_id = rgget( 'lid' );
+			$current_entry_id = absint( rgget( 'lid' ) );
 
 			$page_size = 20;
 			$search_criteria = array(

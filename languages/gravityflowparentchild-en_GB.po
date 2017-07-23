@@ -1,32 +1,31 @@
-# Copyright 2015-2017 Steven Henty.
+# Copyright 2015-2016 Steven Henty.
+# Translators:
+# Steve Henty <stevehenty@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Flow Parent-Child Forms Extension 1.1-dev\n"
+"Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2017-07-23 19:53:01+00:00\n"
+"POT-Creation-Date: 2016-11-16 22:15:50+00:00\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Steve Henty <stevehenty@gmail.com>, 2017\n"
+"Language-Team: English (United Kingdom) (https://www.transifex.com/gravityflow/teams/50678/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Steven Henty <support@gravityflow.io>\n"
-"Language-Team: Steven Henty <support@gravityflow.io>\n"
-"X-Generator: Gravity Flow Build Script\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Project-Id-Version: gravityflowparentchild\n"
-"Language: en_US\n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gravity Flow Build Script\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-Country: United States\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Textdomain-Support: yes\n"
 
 #: class-parent-child.php:77
-msgid "Parent Entry ID: Form %d"
-msgstr ""
+msgid "Parent Entry ID"
+msgstr "Parent Entry ID"
 
 #: class-parent-child.php:107
 msgid "Parent-Child Forms"
@@ -34,31 +33,31 @@ msgstr ""
 
 #: class-parent-child.php:111
 msgid "Child Forms"
-msgstr ""
+msgstr "Child Forms"
 
 #: class-parent-child.php:117 class-parent-child.php:330
 msgid "Parent Forms"
-msgstr ""
+msgstr "Parent Forms"
 
 #: class-parent-child.php:121
 msgid "Select Parent Forms"
-msgstr ""
+msgstr "Select Parent Forms"
 
 #: class-parent-child.php:201
 msgid "View all"
-msgstr ""
+msgstr "View all"
 
 #: class-parent-child.php:225
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: class-parent-child.php:228
 msgid "Submitter"
-msgstr ""
+msgstr "Submitter"
 
 #: class-parent-child.php:347
 msgid "There are no child forms linked to this form"
-msgstr ""
+msgstr "There are no child forms linked to this form"
 
 #. Plugin Name of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension"

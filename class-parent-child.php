@@ -68,6 +68,26 @@ if ( class_exists( 'GFForms' ) ) {
 			add_action( 'wp_ajax_gravityflowparentchild_get_form', array( $this, 'ajax_get_form' ) );
 		}
 
+		/**
+		 * Add the extension capabilities to the Gravity Flow group in Members.
+		 *
+		 * @since 1.1-dev
+		 *
+		 * @param array $caps The capabilities and their human readable labels.
+		 *
+		 * @return array
+		 */
+		public function get_members_capabilities( $caps ) {
+			$prefix = $this->get_short_title() . ': ';
+
+			$caps['gravityflowparentchild_settings']      = $prefix . __( 'Manage Settings', 'gravityflowpaypal' );
+			$caps['gravityflowparentchild_uninstall']     = $prefix . __( 'Uninstall', 'gravityflowpaypal' );
+			$caps['gravityflowparentchild_form_settings'] = $prefix . __( 'Manage Form Settings', 'gravityflowpaypal' );
+			$caps['gravityflowparentchild_view_all']      = $prefix . __( 'Entry Detail - View All', 'gravityflowpaypal' );
+
+			return $caps;
+		}
+
 		public function get_entry_meta( $entry_meta, $form_id ) {
 
 			$parent_form_ids = $this->get_parent_form_ids( $form_id );

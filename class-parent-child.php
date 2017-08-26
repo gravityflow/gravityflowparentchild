@@ -114,7 +114,7 @@ if ( class_exists( 'GFForms' ) ) {
 			}
 
 			if ( isset( $entry[ $key ] ) ) {
-				return  $entry[ $key ];
+				return $entry[ $key ];
 			}
 
 			return '';
@@ -127,9 +127,9 @@ if ( class_exists( 'GFForms' ) ) {
 					'title'  => esc_html__( 'Parent-Child Forms', 'gravityflow' ),
 					'fields' => array(
 						array(
-							'name' => 'parent_form_' . $form['id'],
+							'name'  => 'parent_form_' . $form['id'],
 							'label' => esc_html__( 'Child Forms', 'gravityflowformconnector' ),
-							'type' => 'child_forms',
+							'type'  => 'child_forms',
 						),
 					),
 				),
@@ -137,9 +137,9 @@ if ( class_exists( 'GFForms' ) ) {
 					'title'  => esc_html__( 'Parent Forms', 'gravityflow' ),
 					'fields' => array(
 						array(
-							'name' => 'parent_form_' . $form['id'],
+							'name'  => 'parent_form_' . $form['id'],
 							'label' => esc_html__( 'Select Parent Forms', 'gravityflowformconnector' ),
-							'type' => 'parent_forms',
+							'type'  => 'parent_forms',
 						),
 					),
 				),
@@ -166,8 +166,10 @@ if ( class_exists( 'GFForms' ) ) {
 					$child_forms[ $connected_form['id'] ] = array( 'title' => $connected_form['title'] );
 				}
 				if ( rgar( $form_settings, 'parent_form_' . $connected_form['id'] ) ) {
-					$connected_entry_id = $entry[ 'workflow_parent_form_id_' . $connected_form['id'] . '_entry_id' ];
-					$sibling_forms[ $connected_form['id'] ] = array( 'title' => $connected_form['title'], 'entry_id' => $connected_entry_id );
+					$connected_entry_id                     = $entry[ 'workflow_parent_form_id_' . $connected_form['id'] . '_entry_id' ];
+					$sibling_forms[ $connected_form['id'] ] = array( 'title'    => $connected_form['title'],
+					                                                 'entry_id' => $connected_entry_id
+					);
 				}
 			}
 
@@ -176,16 +178,19 @@ if ( class_exists( 'GFForms' ) ) {
 			}
 
 
-			foreach ( $child_forms as $child_form_id => $child_form  ) {
+			foreach ( $child_forms as $child_form_id => $child_form ) {
 				$title = rgar( $child_form, 'title' );
 				$this->display_child_entries( $form['id'], $child_form_id, $title, $entry['id'] );
 			}
 
 			if ( $this->current_user_can_any( array( 'gform_view_entries', 'gravityflow_view_all' ) ) ) {
-				foreach ( $sibling_forms as $sibling_form_id => $sibling_form  ) {
-					$title = rgar( $sibling_form, 'title' );
-					$entry_url = add_query_arg( array( 'lid' => absint( $sibling_form['entry_id'] ), 'id' => $sibling_form_id ) );
-					$parent_link = sprintf( '<a href="%s"><i class="fa fa-external-link"></i></a>',$entry_url, $title );
+				foreach ( $sibling_forms as $sibling_form_id => $sibling_form ) {
+					$title       = rgar( $sibling_form, 'title' );
+					$entry_url   = add_query_arg( array(
+						'lid' => absint( $sibling_form['entry_id'] ),
+						'id'  => $sibling_form_id
+					) );
+					$parent_link = sprintf( '<a href="%s"><i class="fa fa-external-link"></i></a>', $entry_url, $title );
 					$this->display_child_entries( $sibling_form_id, $form['id'], $title, $sibling_form['entry_id'], $parent_link );
 				}
 			}
@@ -202,23 +207,25 @@ if ( class_exists( 'GFForms' ) ) {
 
 			$current_entry_id = absint( rgget( 'lid' ) );
 
-			$page_size = 20;
+			$page_size       = 20;
 			$search_criteria = array(
-				'status' => 'active',
+				'status'        => 'active',
 				'field_filters' => array(
-					array( 'key' => 'workflow_parent_form_id_' . $parent_form_id . '_entry_id', 'value' => $parent_entry_id ),
+					array( 'key'   => 'workflow_parent_form_id_' . $parent_form_id . '_entry_id',
+					       'value' => $parent_entry_id
+					),
 				),
 			);
-			$sorting = array( 'key' => 'date_created', 'direction' => 'DESC' );
+			$sorting         = array( 'key' => 'date_created', 'direction' => 'DESC' );
 			$paging          = array( 'offset' => 0, 'page_size' => $page_size );
 
 			$total_count = 0;
 
 			$entries = GFAPI::get_entries( $child_form_id, $search_criteria, $sorting, $paging, $total_count );
 
-			$field_id = 'parent_form_' . $child_form_id;
+			$field_id     = 'parent_form_' . $child_form_id;
 			$view_all_url = admin_url( sprintf( 'admin.php?page=gravityflow-status&form-id=%d&f[0]=%s&o[0]=is&v[0]=%d', $child_form_id, $field_id, $parent_entry_id ) );
-			$count_link = $total_count > $page_size ? sprintf( '<a href="%s" />%s (%d)</a>', $view_all_url, esc_html__( 'View all', 'gravityflow' ), $total_count ) : '';
+			$count_link   = $total_count > $page_size ? sprintf( '<a href="%s" />%s (%d)</a>', $view_all_url, esc_html__( 'View all', 'gravityflow' ), $total_count ) : '';
 
 			$form_url = admin_url( 'admin-ajax.php' ) . '?action=gravityflowparentchild_get_form&form_id=' . $child_form_id . '&workflow_parent_entry_id=' . $parent_entry_id;
 			if ( is_admin() ) {
@@ -328,7 +335,7 @@ if ( class_exists( 'GFForms' ) ) {
 		public function get_parent_form_ids( $form_id ) {
 			$parent_form_ids = array();
 
-			$form = GFAPI::get_form( $form_id );
+			$form     = GFAPI::get_form( $form_id );
 			$settings = $this->get_form_settings( $form );
 
 			if ( empty( $settings ) || ! is_array( $settings ) ) {
@@ -336,7 +343,7 @@ if ( class_exists( 'GFForms' ) ) {
 			}
 			foreach ( $settings as $key => $setting ) {
 				if ( strstr( $key, 'parent_form_' ) && $setting == 1 ) {
-					$form_id = str_replace( 'parent_form_', '', $key );
+					$form_id           = str_replace( 'parent_form_', '', $key );
 					$parent_form_ids[] = absint( $form_id );
 				}
 			}
@@ -347,16 +354,19 @@ if ( class_exists( 'GFForms' ) ) {
 
 		public function add_form_settings_menu( $tabs, $form_id ) {
 
-			$tabs[] = array( 'name' => $this->_slug, 'label' => esc_html__( 'Parent Forms', 'gravityflowformconnector' ), 'query' => array( 'fid' => null ) );
+			$tabs[] = array( 'name'  => $this->_slug,
+			                 'label' => esc_html__( 'Parent Forms', 'gravityflowformconnector' ),
+			                 'query' => array( 'fid' => null )
+			);
 
 			return $tabs;
 		}
 
 		public function settings_child_forms() {
-			$forms = GFAPI::get_forms();
+			$forms        = GFAPI::get_forms();
 			$current_form = $this->get_current_form();
 
-			foreach ( $forms  as $form ) {
+			foreach ( $forms as $form ) {
 				$settings = $this->get_form_settings( $form );
 				if ( rgar( $settings, 'parent_form_' . $current_form['id'] ) == 1 ) {
 					$child_forms[] = $form;
@@ -365,14 +375,14 @@ if ( class_exists( 'GFForms' ) ) {
 
 			if ( empty( $child_forms ) ) {
 				esc_html_e( 'There are no child forms linked to this form', 'gravityflowformconnector' );
-		    } else {
-			    echo '<ul>';
-			    foreach ( $child_forms as $child_form ) {
-				    $form_settings_url = add_query_arg( array( 'id' => $child_form['id'] ) );
-				    printf( '<li><a href="%s"><i class="fa fa-link"></i></a> %s</li>', esc_url( $form_settings_url ), $child_form['title'] );
-			    }
-			    echo '</ul>';
-		    }
+			} else {
+				echo '<ul>';
+				foreach ( $child_forms as $child_form ) {
+					$form_settings_url = add_query_arg( array( 'id' => $child_form['id'] ) );
+					printf( '<li><a href="%s"><i class="fa fa-link"></i></a> %s</li>', esc_url( $form_settings_url ), $child_form['title'] );
+				}
+				echo '</ul>';
+			}
 
 
 		}
@@ -381,15 +391,15 @@ if ( class_exists( 'GFForms' ) ) {
 			$parent_forms = GFAPI::get_forms();
 
 			echo '<ul>';
-			foreach ( $parent_forms  as $parent_form ) {
+			foreach ( $parent_forms as $parent_form ) {
 
 				$choice = array( 'label' => $parent_form['title'], 'name' => 'parent_form_' . $parent_form['id'] );
-				$field = array(
-					'name' => 'parent_form_' . $parent_form['id'],
-					'label' => $parent_form['title'],
-					'type' => 'checkbox',
+				$field  = array(
+					'name'       => 'parent_form_' . $parent_form['id'],
+					'label'      => $parent_form['title'],
+					'type'       => 'checkbox',
 					'horizontal' => true,
-					'choices' => array( $choice ),
+					'choices'    => array( $choice ),
 				);
 				echo '<li>';
 				$this->settings_checkbox( $field );

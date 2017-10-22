@@ -1,19 +1,20 @@
 # Copyright 2015-2017 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2017
+# Ecron <ecron_89@hotmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
 "POT-Creation-Date: 2017-07-23 19:53:01+00:00\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FX Bénard <fxb@wp-translations.org>, 2017\n"
-"Language-Team: Turkish (Turkey) (https://www.transifex.com/gravityflow/teams/50678/tr_TR/)\n"
+"Last-Translator: Ecron <ecron_89@hotmail.com>, 2017\n"
+"Language-Team: Catalan (https://www.transifex.com/gravityflow/teams/50678/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr_TR\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gravity Flow Build Script\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
@@ -25,43 +26,43 @@ msgstr ""
 
 #: class-parent-child.php:77
 msgid "Parent Entry ID: Form %d"
-msgstr "Ana kayıt no: Form %d"
+msgstr "ID de l'entrada pare: Formulari %d"
 
 #: class-parent-child.php:107
 msgid "Parent-Child Forms"
-msgstr "Ana-alt formlar"
+msgstr "Formularis pare-fill"
 
 #: class-parent-child.php:111
 msgid "Child Forms"
-msgstr "Alt formlar"
+msgstr "Formularis fill"
 
 #: class-parent-child.php:117 class-parent-child.php:330
 msgid "Parent Forms"
-msgstr "Üst formlar"
+msgstr "Formularis pare"
 
 #: class-parent-child.php:121
 msgid "Select Parent Forms"
-msgstr "Ana formu seçin"
+msgstr "Seleccioneu els formularis pare"
 
 #: class-parent-child.php:201
 msgid "View all"
-msgstr "Tümünü göster"
+msgstr "Mostra-ho tot"
 
 #: class-parent-child.php:225
 msgid "Date"
-msgstr "Tarih"
+msgstr "Data"
 
 #: class-parent-child.php:228
 msgid "Submitter"
-msgstr "Gönderen"
+msgstr "Enviat per"
 
 #: class-parent-child.php:347
 msgid "There are no child forms linked to this form"
-msgstr "Bu forma bağlı hiçbir alt form yok"
+msgstr "No hi ha cap formulari fill enllaçat a aquest formulari"
 
 #. Plugin Name of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension"
-msgstr "Gravity Flow Parent-Child Forms Uzantısı"
+msgstr "Extensió Formularis Pare-Fill del Gravity Flow"
 
 #. Plugin URI of the plugin/theme
 msgid "http://gravityflow.io"
@@ -69,7 +70,7 @@ msgstr "http://gravityflow.io"
 
 #. Description of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension for Gravity Flow."
-msgstr "Gravity Flow için Parent-Child Forms Uzantısı."
+msgstr "Extensió Formularis Pare-Fill per al Gravity Flow."
 
 #. Author of the plugin/theme
 msgid "Steve Henty"

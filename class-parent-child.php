@@ -183,7 +183,7 @@ if ( class_exists( 'GFForms' ) ) {
 				$this->display_child_entries( $form['id'], $child_form_id, $title, $entry['id'] );
 			}
 
-			if ( $this->current_user_can_any( array( 'gform_view_entries', 'gravityflow_view_all' ) ) ) {
+			if ( $this->current_user_can_any( array( 'gravityforms_view_entries', 'gravityflow_status_view_all' ) ) ) {
 				foreach ( $sibling_forms as $sibling_form_id => $sibling_form ) {
 					$title       = rgar( $sibling_form, 'title' );
 					$entry_url   = add_query_arg( array(

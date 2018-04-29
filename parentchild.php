@@ -36,7 +36,8 @@ class Gravity_Flow_Parent_Child_Bootstrap {
 
 		require_once( 'class-parent-child.php' );
 
-		gravity_flow_parent_child();
+		// Registers the class name with GFAddOn.
+		GFAddOn::register( 'Gravity_Flow_Parent_Child' );
 	}
 }
 

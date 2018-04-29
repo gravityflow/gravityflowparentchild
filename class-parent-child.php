@@ -5,7 +5,7 @@
  *
  * @package     GravityFlow
  * @subpackage  Classes/Extension
- * @copyright   Copyright (c) 2015, Steven Henty
+ * @copyright   Copyright (c) 2015-2018, Steven Henty S.L.
  * @license     http://opensource.org/licenses/gpl-3.0.php GNU Public License
  * @since       1.0
  */

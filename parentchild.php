@@ -9,7 +9,7 @@ Author URI: https://gravityflow.io
 License: GPL-3.0+
 
 ------------------------------------------------------------------------
-Copyright 2015-2016 Steven Henty
+Copyright 2015-2018 Steven Henty S.L.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -36,7 +36,8 @@ class Gravity_Flow_Parent_Child_Bootstrap {
 
 		require_once( 'class-parent-child.php' );
 
-		gravity_flow_parent_child();
+		// Registers the class name with GFAddOn.
+		GFAddOn::register( 'Gravity_Flow_Parent_Child' );
 	}
 }
 

@@ -29,7 +29,7 @@ if ( class_exists( 'GFForms' ) ) {
 		protected $_path = 'gravityflowparentchild/parentchild.php';
 
 		// Title of the plugin to be used on the settings page, form settings and plugins page.
-		protected $_title = 'Parent-Child Forms';
+		protected $_title = 'Gravity Flow Parent-Child Forms Extension';
 
 		// Short version of the plugin title to be used on menus and other places where a less verbose string is useful.
 		protected $_short_title = 'Parent-Child Forms';

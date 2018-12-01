@@ -1,3 +1,4 @@
 - Added the Form ID to the entry meta labels.
+- Added the gravityflowparentchild_child_entry_url filter to allow the child entry URL to be modified.
 - Fixed an issue with the capabilities required to view the parent and child entry metaboxes.
 - Updated Members 2.0 integration to use human readable labels for the capabilities. Requires Gravity Flow 1.8.1 or greater.

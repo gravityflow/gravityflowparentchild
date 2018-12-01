@@ -260,6 +260,19 @@ if ( class_exists( 'GFForms' ) ) {
 								foreach ( $entries as $entry ) {
 									$entry_url = add_query_arg( array( 'lid' => absint( $entry['id'] ), 'id' => $child_form_id ) );
 
+									/**
+									 * Allows the URL for the child entry to be modified.
+									 *
+									 * @since 1.1
+									 *
+									 * @param string $entry_url       The child entry URL.
+									 * @param array  $entry           The child entry.
+									 * @param int    $child_form_id   The child form ID.
+									 * @param int    $parent_entry_id The parent entry ID.
+									 * @param int    $parent_form_id  The parent form ID.
+									 */
+									$entry_url = apply_filters( 'gravityflowparentchild_child_entry_url', $entry_url, $entry, $child_form_id, $parent_entry_id, $parent_form_id );
+
 									$user_id = $entry['created_by'];
 									if ( $user_id ) {
 										$user         = get_user_by( 'id', $user_id );

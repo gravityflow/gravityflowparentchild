@@ -44,10 +44,10 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
 
 == ChangeLog ==
 
-= 1.0.0.3 =
+= 1.1 =
+- Added the Form ID to the entry meta labels.
+- Added the gravityflowparentchild_child_entry_url filter to allow the child entry URL to be modified.
 - Added the gravityflowparentchild_form_settings capability
-
-= 1.0.0.2 =
 - Added the gravityflowparentchild_add_child_entry_link filter.
     Example:
     add_filter( 'gravityflowparentchild_add_child_entry_link', 'sh_filter_gravityflowparentchild_add_child_entry_link', 10, 5 );
@@ -57,9 +57,9 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
         $form_link = sprintf( '<a href="%s">New Evaluation</a>', $form_url );
         return $form_link;
     }
-
-= 1.0.0.1 =
 - Added the gravityflowparentchild_view_all capability to control who can see the child entries.
+- Fixed an issue with the capabilities required to view the parent and child entry metaboxes.
+- Updated Members 2.0 integration to use human readable labels for the capabilities. Requires Gravity Flow 1.8.1 or greater.
 
 = 1.0.0 =
 All new!

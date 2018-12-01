@@ -1,16 +1,18 @@
 # Copyright 2015-2017 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2017
+# Jose Manuel Cardoso Freitas <josefreitas2@gmail.com>, 2017
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2017-07-23 19:53:01+00:00\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FX Bénard <fxb@wp-translations.org>, 2017\n"
+"POT-Creation-Date: 2017-10-22 17:19:57+00:00\n"
+"PO-Revision-Date: 2016-11-16 22:39+0000\n"
+"Last-Translator: Jose Manuel Cardoso Freitas <josefreitas2@gmail.com>, 2017\n"
 "Language-Team: Portuguese (Portugal) (https://www.transifex.com/gravityflow/teams/50678/pt_PT/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -23,39 +25,55 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Textdomain-Support: yes\n"
 
-#: class-parent-child.php:77
+#: class-parent-child.php:83
+msgid "Manage Settings"
+msgstr "Gerir definições"
+
+#: class-parent-child.php:84
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: class-parent-child.php:85
+msgid "Manage Form Settings"
+msgstr "Gerir definições do formulário"
+
+#: class-parent-child.php:86
+msgid "Entry Detail - View All"
+msgstr "Detalhes dos registos - Ver todos"
+
+#: class-parent-child.php:97
 msgid "Parent Entry ID: Form %d"
 msgstr "ID do registo do principal: Formulário %d"
 
-#: class-parent-child.php:107
+#: class-parent-child.php:127
 msgid "Parent-Child Forms"
 msgstr "Formulários Principal-Dependente"
 
-#: class-parent-child.php:111
+#: class-parent-child.php:131
 msgid "Child Forms"
 msgstr "Formulário dependente"
 
-#: class-parent-child.php:117 class-parent-child.php:330
+#: class-parent-child.php:137 class-parent-child.php:358
 msgid "Parent Forms"
 msgstr "Formulário principal"
 
-#: class-parent-child.php:121
+#: class-parent-child.php:141
 msgid "Select Parent Forms"
 msgstr "Selecciona o formulário principal"
 
-#: class-parent-child.php:201
+#: class-parent-child.php:228
 msgid "View all"
 msgstr "Ver tudo"
 
-#: class-parent-child.php:225
+#: class-parent-child.php:252
 msgid "Date"
 msgstr "Data"
 
-#: class-parent-child.php:228
+#: class-parent-child.php:255
 msgid "Submitter"
 msgstr "Criador"
 
-#: class-parent-child.php:347
+#: class-parent-child.php:377
 msgid "There are no child forms linked to this form"
 msgstr "Não há formulários dependentes ligados a este formulário"
 
@@ -63,18 +81,14 @@ msgstr "Não há formulários dependentes ligados a este formulário"
 msgid "Gravity Flow Parent-Child Forms Extension"
 msgstr "Gravity Flow Parent-Child Forms Extension"
 
-#. Plugin URI of the plugin/theme
-msgid "http://gravityflow.io"
-msgstr "http://gravityflow.io"
+#. Author URI of the plugin/theme
+msgid "https://gravityflow.io"
+msgstr "https://gravityflow.io"
 
 #. Description of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension for Gravity Flow."
 msgstr "Extensão Gravity Flow Parent-Child Forms para Gravity Flow."
 
 #. Author of the plugin/theme
-msgid "Steve Henty"
-msgstr "Steve Henty"
-
-#. Author URI of the plugin/theme
-msgid "http://www.stevenhenty.com"
-msgstr "http://www.stevenhenty.com"
+msgid "Gravity Flow"
+msgstr "Gravity Flow"

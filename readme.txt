@@ -47,7 +47,7 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
 = 1.1 =
 - Added the Form ID to the entry meta labels.
 - Added the gravityflowparentchild_child_entry_url filter to allow the child entry URL to be modified.
-- Added the gravityflowparentchild_form_settings capability
+- Added the gravityflowparentchild_form_settings capability.
 - Added the gravityflowparentchild_add_child_entry_link filter.
     Example:
     add_filter( 'gravityflowparentchild_add_child_entry_link', 'sh_filter_gravityflowparentchild_add_child_entry_link', 10, 5 );

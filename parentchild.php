@@ -26,6 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 define( 'GRAVITY_FLOW_PARENT_CHILD_VERSION', '1.1.1-dev' );
+define( 'GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_ID', 3894 );
 define( 'GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_NAME', 'Parent-Child Forms' );
 
 add_action( 'gravityflow_loaded', array( 'Gravity_Flow_Parent_Child_Bootstrap', 'load' ), 1 );
@@ -38,6 +39,10 @@ class Gravity_Flow_Parent_Child_Bootstrap {
 
 		// Registers the class name with GFAddOn.
 		GFAddOn::register( 'Gravity_Flow_Parent_Child' );
+
+		if ( defined( 'GRAVITY_FLOW_PARENT_CHILD_LICENSE_KEY' ) ) {
+			gravity_flow_parent_child()->license_key = GRAVITY_FLOW_PARENT_CHILD_LICENSE_KEY;
+		}
 	}
 }
 
@@ -58,15 +63,19 @@ function gravityflowparentchild_edd_plugin_updater() {
 
 	$gravity_flow_parent_child = gravity_flow_parent_child();
 	if ( $gravity_flow_parent_child ) {
-		$settings = $gravity_flow_parent_child->get_app_settings();
 
-		$license_key = trim( rgar( $settings, 'license_key' ) );
+		if ( defined( 'GRAVITY_FLOW_PARENT_CHILD_LICENSE_KEY' ) ) {
+			$license_key = GRAVITY_FLOW_PARENT_CHILD_LICENSE_KEY;
+		} else {
+			$settings = $gravity_flow_parent_child->get_app_settings();
+			$license_key = trim( rgar( $settings, 'license_key' ) );
+		}
 
 		$edd_updater = new Gravity_Flow_EDD_SL_Plugin_Updater( GRAVITY_FLOW_EDD_STORE_URL, __FILE__, array(
 			'version'   => GRAVITY_FLOW_PARENT_CHILD_VERSION,
 			'license'   => $license_key,
-			'item_name' => GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_NAME,
-			'author'    => 'Steven Henty',
+			'item_id' => GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_ID,
+			'author'    => 'Gravity Flow',
 		) );
 	}
 

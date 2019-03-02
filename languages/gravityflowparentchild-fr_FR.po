@@ -1,4 +1,4 @@
-# Copyright 2015-2017 Steven Henty.
+# Copyright 2015-2018 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2017
 # 
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2017-10-22 17:19:57+00:00\n"
+"POT-Creation-Date: 2018-12-01 16:56:38+00:00\n"
 "PO-Revision-Date: 2016-11-16 22:39+0000\n"
 "Last-Translator: FX Bénard <fxb@wp-translations.org>, 2017\n"
 "Language-Team: French (France) (https://www.transifex.com/gravityflow/teams/50678/fr_FR/)\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gravity Flow Build Script\n"
+"X-Generator: grunt-wp-i18n1.0.2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-Country: United States\n"
@@ -52,7 +52,7 @@ msgstr "Formulaires parents-enfants"
 msgid "Child Forms"
 msgstr "Formulaires enfants"
 
-#: class-parent-child.php:137 class-parent-child.php:358
+#: class-parent-child.php:137 class-parent-child.php:371
 msgid "Parent Forms"
 msgstr "Formulaires parents"
 
@@ -72,7 +72,7 @@ msgstr "Date"
 msgid "Submitter"
 msgstr "Créateur"
 
-#: class-parent-child.php:377
+#: class-parent-child.php:390
 msgid "There are no child forms linked to this form"
 msgstr "Il n’y a aucun formulaire enfant pour ce formulaire"
 

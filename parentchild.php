@@ -3,7 +3,7 @@
 Plugin Name: Gravity Flow Parent-Child Forms Extension
 Plugin URI: https://gravityflow.io
 Description: Gravity Flow Parent-Child Forms Extension for Gravity Flow.
-Version: 1.1.1-dev
+Version: 1.2.1-dev
 Author: Gravity Flow
 Author URI: https://gravityflow.io
 License: GPL-3.0+
@@ -25,7 +25,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-define( 'GRAVITY_FLOW_PARENT_CHILD_VERSION', '1.1.1-dev' );
+define( 'GRAVITY_FLOW_PARENT_CHILD_VERSION', '1.2.1-dev' );
 define( 'GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_ID', 3894 );
 define( 'GRAVITY_FLOW_PARENT_CHILD_EDD_ITEM_NAME', 'Parent-Child Forms' );
 

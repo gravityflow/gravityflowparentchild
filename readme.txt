@@ -45,6 +45,10 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
 == ChangeLog ==
 
 = 1.1 =
+- Added support for the license key constant GRAVITY_FLOW_PARENT_CHILD_LICENSE_KEY.
+
+
+= 1.1 =
 - Added the Form ID to the entry meta labels.
 - Added the gravityflowparentchild_child_entry_url filter to allow the child entry URL to be modified.
 - Added the gravityflowparentchild_form_settings capability.

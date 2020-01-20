@@ -227,9 +227,18 @@ if ( class_exists( 'GFForms' ) ) {
 			$view_all_url = admin_url( sprintf( 'admin.php?page=gravityflow-status&form-id=%d&f[0]=%s&o[0]=is&v[0]=%d', $child_form_id, $field_id, $parent_entry_id ) );
 			$count_link   = $total_count > $page_size ? sprintf( '<a href="%s" />%s (%d)</a>', $view_all_url, esc_html__( 'View all', 'gravityflowparentchild' ), $total_count ) : '';
 
-			$form_url = admin_url( 'admin-ajax.php' ) . '?action=gravityflowparentchild_get_form&form_id=' . $child_form_id . '&workflow_parent_entry_id=' . $parent_entry_id;
+			$form_url = add_query_arg(
+				array(
+					'action'                   => 'gravityflowparentchild_get_form',
+					'form_id'                  => $child_form_id,
+					'workflow_parent_entry_id' => $parent_entry_id,
+					'nonce'                    => wp_create_nonce( 'gravityflowparentchild_get_form' . $child_form_id . $parent_entry_id ),
+				),
+				admin_url( 'admin-ajax.php' )
+			);
+
 			if ( is_admin() ) {
-				$form_url .= '&is_admin=1';
+			    $form_url = add_query_arg( array( 'is_admin' => 1 ), $form_url );
 			}
 
 			$form_link = sprintf( '<a href="%s&TB_iframe=true&width=600&height=550" class="thickbox"><i class="fa fa-plus gravityflowparentchild-form-new-entry"></i></a>', $form_url );
@@ -319,6 +328,13 @@ if ( class_exists( 'GFForms' ) ) {
 		}
 
 		public function ajax_get_form() {
+			check_ajax_referer( 'gravityflowparentchild_get_form' . rgget( 'form_id' ) . rgget( 'workflow_parent_entry_id' ), 'nonce' );
+
+			// If user is not authorized, exit.
+			if ( ! GFCommon::current_user_can_any( $this->_capabilities_settings_page ) ) {
+				wp_send_json_error( array( 'message' => esc_html__( 'Access denied.', 'gravityflowparentchild' ) ) );
+			}
+
 			$form_id = isset( $_GET['form_id'] ) ? absint( $_GET['form_id'] ) : 0;
 
 			$field_id = sanitize_text_field( rgget( 'field_id' ) );

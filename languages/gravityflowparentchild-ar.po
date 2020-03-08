@@ -1,7 +1,6 @@
 # Copyright 2015-2019 Steven Henty.
 # Translators:
-# FX Bénard <fxb@wp-translations.org>, 2017
-# Tor-Bjorn Fjellner, 2017
+# FX Bénard <fxb@wp-translations.org>, 2019
 # 
 msgid ""
 msgstr ""
@@ -9,13 +8,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
 "POT-Creation-Date: 2019-03-02 17:07:36+00:00\n"
 "PO-Revision-Date: 2016-11-16 22:39+0000\n"
-"Last-Translator: Tor-Bjorn Fjellner, 2017\n"
-"Language-Team: Swedish (Sweden) (https://www.transifex.com/gravityflow/teams/50678/sv_SE/)\n"
+"Last-Translator: FX Bénard <fxb@wp-translations.org>, 2019\n"
+"Language-Team: Arabic (https://www.transifex.com/gravityflow/teams/50678/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv_SE\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: grunt-wp-i18n1.0.2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
@@ -27,59 +26,59 @@ msgstr ""
 
 #: class-parent-child.php:83
 msgid "Manage Settings"
-msgstr "Hantera inställningar"
+msgstr "إدارة الإعدادات"
 
 #: class-parent-child.php:84
 msgid "Uninstall"
-msgstr "Avinstallera"
+msgstr "إلغاء التثبيت"
 
 #: class-parent-child.php:85
 msgid "Manage Form Settings"
-msgstr "Hantera formulärinställningar"
+msgstr "إدارة إعدادات النموذج"
 
 #: class-parent-child.php:86
 msgid "Entry Detail - View All"
-msgstr "Inmatning av uppgifter – visa allt"
+msgstr "تفاصيل الدخول - عرض الكل"
 
 #: class-parent-child.php:97
 msgid "Parent Entry ID: Form %d"
-msgstr "Överordnat post-ID: Formulär %d"
+msgstr "معرف إدخال الأصل: نموذج %d"
 
 #: class-parent-child.php:127
 msgid "Parent-Child Forms"
-msgstr "Överordnade-underordnade formulär"
+msgstr " نماذج أصلية/فرعية"
 
 #: class-parent-child.php:131
 msgid "Child Forms"
-msgstr "Underordnade formulär"
+msgstr "نماذج الفرع"
 
 #: class-parent-child.php:137 class-parent-child.php:371
 msgid "Parent Forms"
-msgstr "Överordnade formulär"
+msgstr "نماذج الأصل"
 
 #: class-parent-child.php:141
 msgid "Select Parent Forms"
-msgstr "Välj överordnade formulär"
+msgstr "حدد نماذج الأصل"
 
 #: class-parent-child.php:228
 msgid "View all"
-msgstr "Visa alla"
+msgstr "عرض الكل"
 
 #: class-parent-child.php:252
 msgid "Date"
-msgstr "Datum"
+msgstr "التاريخ"
 
 #: class-parent-child.php:255
 msgid "Submitter"
-msgstr "Inskickare"
+msgstr "المرسل"
 
 #: class-parent-child.php:390
 msgid "There are no child forms linked to this form"
-msgstr "Inga underordnade formulär är kopplade till detta formulär"
+msgstr "لا توجد نماذج فرعية مرتبطة بهذا النموذج"
 
 #. Plugin Name of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension"
-msgstr "Gravity Flow Parent-Child Forms Extension"
+msgstr "Gravity Flow أصلي/فرعي ملحق نماذج"
 
 #. Author URI of the plugin/theme
 msgid "https://gravityflow.io"
@@ -87,7 +86,7 @@ msgstr "https://gravityflow.io"
 
 #. Description of the plugin/theme
 msgid "Gravity Flow Parent-Child Forms Extension for Gravity Flow."
-msgstr "Tillägg till Gravity Flow för överordnade/underordnade formulär."
+msgstr "Gravity Flow أصلي/فرعي ملحق نماذج لGravity Flow."
 
 #. Author of the plugin/theme
 msgid "Gravity Flow"

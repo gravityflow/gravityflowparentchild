@@ -1,1 +1,2 @@
 - Added security enhancements.
+- Updated translations. Added Catalan and Arabic - thanks to WP Translations @wp_translation.

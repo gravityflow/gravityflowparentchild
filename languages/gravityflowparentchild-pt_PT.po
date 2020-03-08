@@ -1,4 +1,4 @@
-# Copyright 2015-2018 Steven Henty.
+# Copyright 2015-2019 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2017
 # Jose Manuel Cardoso Freitas <josefreitas2@gmail.com>, 2017
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2018-12-01 16:56:38+00:00\n"
+"POT-Creation-Date: 2019-03-02 17:07:36+00:00\n"
 "PO-Revision-Date: 2016-11-16 22:39+0000\n"
 "Last-Translator: Jose Manuel Cardoso Freitas <josefreitas2@gmail.com>, 2017\n"
 "Language-Team: Portuguese (Portugal) (https://www.transifex.com/gravityflow/teams/50678/pt_PT/)\n"

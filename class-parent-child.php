@@ -248,7 +248,7 @@ if ( class_exists( 'GFForms' ) ) {
 			$form_link = apply_filters( 'gravityflowparentchild_add_child_entry_link', $form_link, $form_url, $parent_form_id, $child_form_id, $parent_entry_id );
 			?>
 
-			<div class="postbox">
+			<div class="postbox <?php echo( "child-forms " . "child-form-" . $child_form_id ); ?>">
 				<h3 class="hndle" style="cursor:default;">
 					<span><?php echo esc_html( $title ); ?> <?php echo $parent_link;?></span>
 					<span style="float:right"><?php echo $form_link; ?></span>

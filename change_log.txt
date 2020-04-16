@@ -1,2 +1,3 @@
 - Added security enhancements.
 - Updated translations. Added Catalan and Arabic - thanks to WP Translations @wp_translation.
+- Added child form ID as a class to the sidebar postbox div. This can help in CSS/JS customizations and show/hide the boxes by form.

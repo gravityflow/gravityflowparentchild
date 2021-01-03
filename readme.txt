@@ -1,8 +1,8 @@
 === Gravity Flow Parent-Child Extension ===
 Contributors: stevehenty
 Tags: gravity forms, approvals, workflow
-Requires at least: 4.0
-Tested up to: 5.3.2
+Requires at least: 5.0
+Tested up to: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,13 +12,13 @@ Create parent-child relationships between forms in Gravity Flow.
 
 The Gravity Flow Parent-Child Extension is an extension for Gravity Flow.
 
-Gravity Flow is a commercial Add-On for [Gravity Forms](https://gravityflow.io/gravityforms)
+Gravity Flow is a commercial Add-On for [Gravity Forms](https://gravityflow.io/out/gravityforms)
 
 Facebook: [Gravity Flow](https://www.facebook.com/gravityflow.io)
 
 = Requirements =
 
-1. [Purchase and install Gravity Forms](https://gravityflow.io/gravityforms)
+1. [Purchase and install Gravity Forms](https://gravityflow.io/out/gravityforms)
 1. [Purchase and install Gravity Flow](https://gravityflow.io)
 1. Wordpress 4.3+
 1. The latest version of Gravity Forms
@@ -43,6 +43,9 @@ The Gravity Flow Parent-Child Extension will work with any license of [Gravity F
 
 
 == ChangeLog ==
+
+= 1.3 =
+- Added child form ID as a class to the sidebar postbox div. This can help in CSS/JS customizations and show/hide the boxes by form.
 
 = 1.2.1 =
 - Added security enhancements.

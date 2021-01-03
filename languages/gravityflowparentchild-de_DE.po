@@ -1,4 +1,4 @@
-# Copyright 2015-2019 Steven Henty.
+# Copyright 2015-2020 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2017
 # Christian Herrmann, 2017
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2019-03-02 17:07:36+00:00\n"
+"POT-Creation-Date: 2020-03-08 15:48:01+00:00\n"
 "PO-Revision-Date: 2016-11-16 22:39+0000\n"
 "Last-Translator: Christian Herrmann, 2017\n"
 "Language-Team: German (Germany) (https://www.transifex.com/gravityflow/teams/50678/de_DE/)\n"
@@ -53,7 +53,7 @@ msgstr "Eltern-Kind-Formulare"
 msgid "Child Forms"
 msgstr "Kind-Formulare"
 
-#: class-parent-child.php:137 class-parent-child.php:371
+#: class-parent-child.php:137 class-parent-child.php:387
 msgid "Parent Forms"
 msgstr "Eltern-Formulare"
 
@@ -65,15 +65,19 @@ msgstr "Eltern-Formulare auswählen"
 msgid "View all"
 msgstr "Mehr"
 
-#: class-parent-child.php:252
+#: class-parent-child.php:261
 msgid "Date"
 msgstr "Datum"
 
-#: class-parent-child.php:255
+#: class-parent-child.php:264
 msgid "Submitter"
 msgstr "Absender"
 
-#: class-parent-child.php:390
+#: class-parent-child.php:335
+msgid "Access denied."
+msgstr ""
+
+#: class-parent-child.php:406
 msgid "There are no child forms linked to this form"
 msgstr "Es sind keine Kind-Formulare mit diesem Formular verlinkt"
 

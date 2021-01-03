@@ -1,4 +1,4 @@
-# Copyright 2015-2019 Steven Henty.
+# Copyright 2015-2020 Steven Henty.
 # Translators:
 # FX Bénard <fxb@wp-translations.org>, 2019
 # 
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gravityflowparentchild\n"
 "Report-Msgid-Bugs-To: https://www.gravityflow.io\n"
-"POT-Creation-Date: 2019-03-02 17:07:36+00:00\n"
+"POT-Creation-Date: 2020-03-08 15:48:01+00:00\n"
 "PO-Revision-Date: 2016-11-16 22:39+0000\n"
 "Last-Translator: FX Bénard <fxb@wp-translations.org>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/gravityflow/teams/50678/ar/)\n"
@@ -52,7 +52,7 @@ msgstr " نماذج أصلية/فرعية"
 msgid "Child Forms"
 msgstr "نماذج الفرع"
 
-#: class-parent-child.php:137 class-parent-child.php:371
+#: class-parent-child.php:137 class-parent-child.php:387
 msgid "Parent Forms"
 msgstr "نماذج الأصل"
 
@@ -64,15 +64,19 @@ msgstr "حدد نماذج الأصل"
 msgid "View all"
 msgstr "عرض الكل"
 
-#: class-parent-child.php:252
+#: class-parent-child.php:261
 msgid "Date"
 msgstr "التاريخ"
 
-#: class-parent-child.php:255
+#: class-parent-child.php:264
 msgid "Submitter"
 msgstr "المرسل"
 
-#: class-parent-child.php:390
+#: class-parent-child.php:335
+msgid "Access denied."
+msgstr ""
+
+#: class-parent-child.php:406
 msgid "There are no child forms linked to this form"
 msgstr "لا توجد نماذج فرعية مرتبطة بهذا النموذج"
 

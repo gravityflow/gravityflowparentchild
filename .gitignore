@@ -1,0 +1,3 @@
+tests/acceptance-tests/_output/
+tests/acceptance-tests/_support/_generated/AcceptanceTesterActions.php
+.DS_Store

@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    parallelism: 1
+    working_directory: ~/gravityflow
+    steps:
+      - checkout
+      - run:
+          name: Run acceptance tests
+          command: |
+            docker-compose run --rm codeception run --html --xml -vvv
+      - store_artifacts:
+          path: ~/gravityflow/tests/acceptance-tests/_output
+      - store_test_results:
+          path: ~/gravityflow/tests/acceptance-tests/_output
